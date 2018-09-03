@@ -1,0 +1,28 @@
+{
+  "name": "lewdcrate",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "client": "cd client && npm run start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Headwiki/lewdcrate.git"
+  },
+  "author": "Henrik Hedlund Andersen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Headwiki/lewdcrate/issues"
+  },
+  "homepage": "https://github.com/Headwiki/lewdcrate#readme"
+}
