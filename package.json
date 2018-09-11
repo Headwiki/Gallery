@@ -1,5 +1,5 @@
 {
-  "name": "lewdcrate",
+  "name": "gallery",
   "version": "1.0.0",
   "scripts": {
     "start": "node server.js",
@@ -10,19 +10,20 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "mysql": "^2.16.0"
   },
   "devDependencies": {
     "concurrently": "^3.6.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Headwiki/lewdcrate.git"
+    "url": "git+https://github.com/Headwiki/Gallery.git"
   },
   "author": "Henrik Hedlund Andersen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Headwiki/lewdcrate/issues"
+    "url": "https://github.com/Headwiki/Gallery/issues"
   },
-  "homepage": "https://github.com/Headwiki/lewdcrate#readme"
+  "homepage": "https://github.com/Headwiki/Gallery#readme"
 }
