@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const image = require('./image')
+const images = require('./images')
 
 // Main router
 router.route('/')
@@ -13,6 +13,6 @@ router.route('/hello')
     })    
 
 // Load sub-router
-router.use('/image', image)
+router.use('/images', images)
 
 module.exports = router

@@ -1,12 +1,8 @@
 const image = require('express').Router()
-
+const images = require('../')
 // Get all images
 image.route('/')
-    .get((req, res) => {
-        res.json({ message: ['/', 'All images'] })
-        
-    }
-)
+    .get()
 
 // Get image given ID
 image.route('/:id')

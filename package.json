@@ -11,7 +11,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.2",
-    "mysql": "^2.16.0"
+    "mongoose": "^5.2.14"
   },
   "devDependencies": {
     "concurrently": "^3.6.1"

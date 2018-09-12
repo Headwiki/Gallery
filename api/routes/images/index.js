@@ -1,13 +1,18 @@
-const test = require('express').Router()
+const router = require('express').Router()
+const images = require('../../controllers/images')
 
-test.route('/')
+// Get all images
+router.route('/')
     .get((req, res) => {
-        res.json({ message: ['/', 'test'] })
+        res.json( {express: '/'} )
     })
+    .post(images.add_image)
 
-test.route('/hello')
+// Get image given ID
+router.route('/:id')
     .get((req, res) => {
-    res.json({ express: ['/hello', 'tesst1'] });
-});
+        res.json({ express: ['/' + req.params.id, 'Image' + req.params.id] });
+    }
+)
 
-module.exports = test
+module.exports = router
