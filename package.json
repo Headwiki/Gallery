@@ -14,7 +14,8 @@
     "mongoose": "^5.2.14"
   },
   "devDependencies": {
-    "concurrently": "^3.6.1"
+    "concurrently": "^3.6.1",
+    "nodemon": "^1.18.4"
   },
   "repository": {
     "type": "git",

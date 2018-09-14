@@ -14,7 +14,7 @@ exports.get_all_images = (req, res) => {
 exports.add_image = (req, res) => {
     const db = req.db
     const tags = req.body.tags
-    console.log(req.body)
+    console.log(typeof req.body.tags)
 
     const new_image = new Image({
         tags: tags
